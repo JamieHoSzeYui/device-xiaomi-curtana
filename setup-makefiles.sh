@@ -48,3 +48,12 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Finish
     write_footers
 fi
+# Required!
+export DEVICE=curtana
+export DEVICE_COMMON=sm6250-common
+export VENDOR=xiaomi
+
+export DEVICE_BRINGUP_YEAR=2020
+
+"./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
+
