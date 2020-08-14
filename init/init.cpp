@@ -109,4 +109,10 @@ void load_device_properties() {
 void vendor_load_properties() {
     load_common_properties();
     load_device_properties();
+
+#include "init_common.h"
+#include "vendor_init.h"
+
+void vendor_load_properties() {
+    load_common_properties();
 }
