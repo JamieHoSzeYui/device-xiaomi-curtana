@@ -181,7 +181,3 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 -include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
 -include vendor/xiaomi/curtana/BoardConfigVendor.mk
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_curtana
-TARGET_RECOVERY_DEVICE_MODULES := libinit_curtana
-
